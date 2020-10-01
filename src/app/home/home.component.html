@@ -1,0 +1,159 @@
+
+<div class="pageWrapper">
+    
+<div class="container">
+    <div class="checkIn">
+  
+      <div class="checkInGroup">
+        <div class="checkInTitle">CHECK-IN</div>
+        <div class="date">
+          <span class="dateNumber"></span>
+          <span class="dateMonth"> </span>
+        </div>
+      </div>
+  
+    </div>
+    <div class="checkOut">
+  
+      <div class="checkInGroup">
+        <div class="checkOutTitle">CHECK-OUT</div>
+        <div class="date">
+          <span class="dateNumber"></span>
+          <span class="dateMonth"> </span>
+        </div>
+      </div>
+  
+  
+    </div>
+    <div class="guest">
+      <div class="guestGroup">
+        <div class="guestTitle"></div>
+        <div class="guestNumber"></div>
+      </div>
+    </div>
+   
+  </div>
+  </div>
+  <div class="pageContainer">
+    <div class="leftColumn">
+     <!-- 
+  firstName
+  lastName
+  email
+  creditCardInfo:   Object {
+    creditCardNumber
+    expDate
+    cvsCode
+  }
+  promoCode: boolean picker
+
+-->
+
+<div class="formContainer">
+    <form #userInfoForm>
+      
+       <div class="form-group">
+                            <label for="example-month-input" class="col-2 col-form-label">CHECK-IN</label>
+                            <div class="col-10">
+                              <input class="form-control" type="date" value="2011-08-01" id="example-month-input">
+                            </div>
+                        </div>
+       <div class="form-group">
+                            <label for="example-month-input" class="col-2 col-form-label">CHECK-OUT</label>
+                            <div class="col-10">
+                              <input class="form-control" type="date" value="2011-08-01" id="example-month-input">
+                            </div>
+                        </div>
+    
+    
+    
+    
+        <!-- FORM GROUP -->
+    
+        <div class="addCreditCardBtn" (click)="addCreditCardBtn()">Add Credit Card</div>
+    
+    
+        <div *ngIf="addCreditCard">
+    
+        <div class="cardNumber">
+           <input class="input" 
+               type="text"
+               placeholder="Card Number"
+               name="cardNumber"
+               [(ngModel)]="cardNumber">
+        </div>
+    
+    
+        <div class="nameOnCard">
+           <input class="input" 
+               type="text"
+               placeholder="Name on Card"
+               name="nameOnCard"
+               [(ngModel)]="nameOnCard">
+        </div>
+    
+    
+        <div class="expirationDate">
+          <input class="input" 
+               type="text"
+               placeholder="Expiration Date"
+               name="expirationDate"
+               [(ngModel)]="expirationDate">
+        </div>
+    
+        <div class="securityCode">
+           <input class="input" 
+               type="text"
+               placeholder="Security Code"
+               name="securityCode"
+               [(ngModel)]="securityCode">
+        </div>
+    
+        <div class="zipCode">
+          <input class="input" 
+               type="text"
+               placeholder="Zip Code"
+               name="zipCode"
+               [(ngModel)]="zipCode">
+        </div>
+        </div>
+    
+        <!-- FORM GROUP -->
+    
+        <button type="submit" class="submitBtn">Submit</button>
+    
+    </form>
+    </div>
+    
+    
+    <div *ngIf="formSubmitted">
+      <div>{{firstName}}</div>
+      <div>{{lastName}}</div>
+      <div>{{email}}</div>
+    
+      <div>{{cardNumber}}</div>
+      <div>{{nameOnCard}}</div>
+      <div>{{expirationDate}}</div>
+      <div>{{securityCode}}</div>
+      <div>{{zipCode}}</div>
+    </div>
+    </div>
+
+    <div class="rightColumn">
+        
+ <div class="prmotions">
+
+    <div class="promoGroup">
+    <div class="promotion">HAVE A PROMOTION CODE?</div>
+    <button class="checkAvailableBtn" 
+            >CHECK AVAILABILITY
+    </button>
+    </div>
+
+  </div>
+
+
+
+
+      </div>
+    </div>
