@@ -7,7 +7,7 @@ import { RegComponent } from './reg/reg.component';
 const routes: Routes = [
   {path:'reserve',component:ReserveComponent}
   ,{path:'home',component:HomeComponent},
-  {path:'',component:LoginComponent},
+  {path:'login ',component:LoginComponent},
   {path:'reg',component:RegComponent}
 ];
 

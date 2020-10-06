@@ -1,159 +1,198 @@
 
-<div class="pageWrapper">
-    
-<div class="container">
-    <div class="checkIn">
-  
-      <div class="checkInGroup">
-        <div class="checkInTitle">CHECK-IN</div>
-        <div class="date">
-          <span class="dateNumber"></span>
-          <span class="dateMonth"> </span>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div style="text-align:center">
+  <h1>La Gallaria!</h1>
+  <br/>
+  <br/>
+  <h5>Better have problems in the most Expensive, Sophisticated and Luxuriest rooms ever! </h5>
+</div>
+
+<h2>Our Bathrooms</h2>
+<div class="row">
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.pexels.com/photos/1571462/pexels-photo-1571462.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
         </div>
       </div>
-  
     </div>
-    <div class="checkOut">
-  
-      <div class="checkInGroup">
-        <div class="checkOutTitle">CHECK-OUT</div>
-        <div class="date">
-          <span class="dateNumber"></span>
-          <span class="dateMonth"> </span>
-        </div>
-      </div>
-  
-  
-    </div>
-    <div class="guest">
-      <div class="guestGroup">
-        <div class="guestTitle"></div>
-        <div class="guestNumber"></div>
-      </div>
-    </div>
-   
   </div>
-  </div>
-  <div class="pageContainer">
-    <div class="leftColumn">
-     <!-- 
-  firstName
-  lastName
-  email
-  creditCardInfo:   Object {
-    creditCardNumber
-    expDate
-    cvsCode
-  }
-  promoCode: boolean picker
-
--->
-
-<div class="formContainer">
-    <form #userInfoForm>
-      
-       <div class="form-group">
-                            <label for="example-month-input" class="col-2 col-form-label">CHECK-IN</label>
-                            <div class="col-10">
-                              <input class="form-control" type="date" value="2011-08-01" id="example-month-input">
-                            </div>
-                        </div>
-       <div class="form-group">
-                            <label for="example-month-input" class="col-2 col-form-label">CHECK-OUT</label>
-                            <div class="col-10">
-                              <input class="form-control" type="date" value="2011-08-01" id="example-month-input">
-                            </div>
-                        </div>
-    
-    
-    
-    
-        <!-- FORM GROUP -->
-    
-        <div class="addCreditCardBtn" (click)="addCreditCardBtn()">Add Credit Card</div>
-    
-    
-        <div *ngIf="addCreditCard">
-    
-        <div class="cardNumber">
-           <input class="input" 
-               type="text"
-               placeholder="Card Number"
-               name="cardNumber"
-               [(ngModel)]="cardNumber">
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.pexels.com/photos/1910472/pexels-photo-1910472.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
         </div>
-    
-    
-        <div class="nameOnCard">
-           <input class="input" 
-               type="text"
-               placeholder="Name on Card"
-               name="nameOnCard"
-               [(ngModel)]="nameOnCard">
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
         </div>
-    
-    
-        <div class="expirationDate">
-          <input class="input" 
-               type="text"
-               placeholder="Expiration Date"
-               name="expirationDate"
-               [(ngModel)]="expirationDate">
-        </div>
-    
-        <div class="securityCode">
-           <input class="input" 
-               type="text"
-               placeholder="Security Code"
-               name="securityCode"
-               [(ngModel)]="securityCode">
-        </div>
-    
-        <div class="zipCode">
-          <input class="input" 
-               type="text"
-               placeholder="Zip Code"
-               name="zipCode"
-               [(ngModel)]="zipCode">
-        </div>
-        </div>
-    
-        <!-- FORM GROUP -->
-    
-        <button type="submit" class="submitBtn">Submit</button>
-    
-    </form>
-    </div>
-    
-    
-    <div *ngIf="formSubmitted">
-      <div>{{firstName}}</div>
-      <div>{{lastName}}</div>
-      <div>{{email}}</div>
-    
-      <div>{{cardNumber}}</div>
-      <div>{{nameOnCard}}</div>
-      <div>{{expirationDate}}</div>
-      <div>{{securityCode}}</div>
-      <div>{{zipCode}}</div>
-    </div>
-    </div>
-
-    <div class="rightColumn">
-        
- <div class="prmotions">
-
-    <div class="promoGroup">
-    <div class="promotion">HAVE A PROMOTION CODE?</div>
-    <button class="checkAvailableBtn" 
-            >CHECK AVAILABILITY
-    </button>
-    </div>
-
-  </div>
-
-
-
-
       </div>
     </div>
+  </div>
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.pexels.com/photos/3965521/pexels-photo-3965521.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.pexels.com/photos/2134224/pexels-photo-2134224.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+<h2>Our Bedrooms</h2>
+<div class="row">
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.pexels.com/photos/1457845/pexels-photo-1457845.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.pexels.com/photos/833045/pexels-photo-833045.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.pexels.com/photos/1879061/pexels-photo-1879061.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.pexels.com/photos/2082087/pexels-photo-2082087.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+<h2>Our Kitchens</h2>
+<div class="row">
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.pexels.com/photos/1454805/pexels-photo-1454805.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.pexels.com/photos/533157/pexels-photo-533157.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.pexels.com/photos/279648/pexels-photo-279648.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
